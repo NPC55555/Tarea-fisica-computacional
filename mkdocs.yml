@@ -1,0 +1,28 @@
+
+site_name: Tarea 2 - Cuadratura Gaussiana
+site_url: https://github.io
+repo_url: https://github.com
+
+theme:
+  name: material
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [.] # Busca el script en la raíz del proyecto
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com
+
+nav:
+  - Introducción: index.md
+  - Descripción del Método: explanation.md
+  - Tutoriales de Uso: tutorials.md
+  - Referencia de Funciones: reference.md
