@@ -2,7 +2,7 @@
 window.MathJax = {
   tex: {
     inlineMath: [["\\(", "\\)"]],
-    displayMath: [["\\", "\\"]],
+    displayMath: [["\\[", "\\]"]],
     processEscapes: true,
     processEnvironments: true
   },
@@ -11,6 +11,7 @@ window.MathJax = {
     processHtmlClass: "arithmatex"
   }
 };
+
 document$.subscribe(() => {
   MathJax.startup.output.clearCache()
   MathJax.typesetClear()
