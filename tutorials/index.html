@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tutorial-de-uso" class="md-skip">
+        <a href="#tutorial-de-uso-y-resultados" class="md-skip">
           Skip to content
         </a>
       
@@ -338,44 +338,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#requisitos-previos" class="md-nav__link">
+  <a href="#resultados-obtenidos-en-la-terminal" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Requisitos Previos
+        Resultados Obtenidos en la Terminal
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#guia-de-ejecucion-rapida" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Guía de Ejecución Rápida
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Guía de Ejecución Rápida">
+    <nav class="md-nav" aria-label="Resultados Obtenidos en la Terminal">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#opcion-1-ejecutar-desde-la-terminal" class="md-nav__link">
+  <a href="#analisis-del-resultado-exacto" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Opción 1: Ejecutar desde la terminal
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#opcion-2-importar-las-funciones-en-un-script-propio" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Opción 2: Importar las funciones en un script propio
+        Análisis del Resultado Exacto
       
     </span>
   </a>
@@ -384,6 +362,17 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flexibilidad-y-modificacion-del-codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flexibilidad y Modificación del Código
+      
+    </span>
+  </a>
   
 </li>
       
@@ -449,44 +438,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#requisitos-previos" class="md-nav__link">
+  <a href="#resultados-obtenidos-en-la-terminal" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Requisitos Previos
+        Resultados Obtenidos en la Terminal
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#guia-de-ejecucion-rapida" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Guía de Ejecución Rápida
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Guía de Ejecución Rápida">
+    <nav class="md-nav" aria-label="Resultados Obtenidos en la Terminal">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#opcion-1-ejecutar-desde-la-terminal" class="md-nav__link">
+  <a href="#analisis-del-resultado-exacto" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Opción 1: Ejecutar desde la terminal
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#opcion-2-importar-las-funciones-en-un-script-propio" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Opción 2: Importar las funciones en un script propio
+        Análisis del Resultado Exacto
       
     </span>
   </a>
@@ -495,6 +462,17 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flexibilidad-y-modificacion-del-codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flexibilidad y Modificación del Código
+      
+    </span>
+  </a>
   
 </li>
       
@@ -518,29 +496,24 @@
   
 
 
-<h1 id="tutorial-de-uso">Tutorial de Uso</h1>
-<p>Este tutorial práctico le guiará en el proceso de utilización del script para aproximar la integral definida mediante el método numérico de cuadratura Gaussiana.</p>
-<h2 id="requisitos-previos">Requisitos Previos</h2>
-<p>Antes de ejecutar el script, asegúrese de tener instaladas las dependencias científicas requeridas en su entorno de Python:</p>
-<pre><code class="language-bash">pip install numpy scipy matplotlib
-</code></pre>
-<h2 id="guia-de-ejecucion-rapida">Guía de Ejecución Rápida</h2>
-<h3 id="opcion-1-ejecutar-desde-la-terminal">Opción 1: Ejecutar desde la terminal</h3>
-<p>Puede clonar el repositorio y correr de manera directa el script principal para observar las aproximaciones numéricas según el valor de N:</p>
-<pre><code class="language-bash">python cuadrature.py
-</code></pre>
-<h3 id="opcion-2-importar-las-funciones-en-un-script-propio">Opción 2: Importar las funciones en un script propio</h3>
-<p>Si desea utilizar la lógica de aproximación en otro bloque de código o en un cuaderno de Jupyter Notebook, puede importar el módulo de la siguiente manera:</p>
-<pre><code class="language-python">from cuadrature import resultado, escalado, pesos_puntos
-
-# Definir el grado de precisión deseado (N)
-puntos_evaluacion = 4
-
-# Calcular la aproximación de la integral
-mi_integral = resultado(puntos_evaluacion, escalado, pesos_puntos)
-
-print(f&quot;El resultado calculado para la aproximación es: {mi_integral}&quot;)
-</code></pre>
+<h1 id="tutorial-de-uso-y-resultados">Tutorial de Uso y Resultados</h1>
+<p>Este script se puede ejecutar de forma directa en la terminal de su computadora. Al correr el archivo, el programa evalúa automáticamente la integral definida utilizando diferentes niveles de precisión (<span class="arithmatex">\(N = 2\)</span>, <span class="arithmatex">\(N = 3\)</span> y <span class="arithmatex">\(N = 4\)</span>).</p>
+<h2 id="resultados-obtenidos-en-la-terminal">Resultados Obtenidos en la Terminal</h2>
+<p>Al ejecutar el comando <code>python cuadrature.py</code>, se despliegan de inmediato los siguientes resultados en consola:</p>
+<ul>
+<li><strong>Para N = 2:</strong> <code>306.8199344959197</code></li>
+<li><strong>Para N = 3:</strong> <code>317.264151733829</code></li>
+<li><strong>Para N = 4:</strong> <code>317.3453903341579</code></li>
+</ul>
+<h3 id="analisis-del-resultado-exacto">Análisis del Resultado Exacto</h3>
+<p>El resultado obtenido con <strong><span class="arithmatex">\(N = 4\)</span></strong> es el valor <strong>exacto</strong> de la integral de la tarea, a excepción de los pequeños errores de redondeo o precisión decimal propios de la computadora.</p>
+<hr />
+<h2 id="flexibilidad-y-modificacion-del-codigo">Flexibilidad y Modificación del Código</h2>
+<p>El script está diseñado de manera modular, lo que significa que el usuario puede editarlo fácilmente en su editor de texto para adaptarlo a otros problemas matemáticos:</p>
+<ul>
+<li><strong>Cambiar el valor de N:</strong> Puede modificar los argumentos de la función <code>resultado(N, ...)</code> en las líneas finales para probar cualquier otro número de puntos de colocación.</li>
+<li><strong>Cambiar la función:</strong> Si edita el bloque interno de la función <code>integrando(varInd)</code>, puede cambiar la ecuación actual por cualquier otra función matemática o integrales con potencias diferentes para obtener sus resultados numéricos al instante.</li>
+</ul>
 
 
 
