@@ -1,7 +1,7 @@
 
 site_name: Tarea 2 - Cuadratura Gaussiana
-site_url: https://github.io
-repo_url: https://github.com
+site_url: https://github.com/
+repo_url: https://github.com/NPC55555/Tarea-fisica-computacional
 
 theme:
   name: material
