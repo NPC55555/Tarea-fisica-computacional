@@ -67,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#tutorial-de-uso" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -279,6 +284,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutoriales de Uso
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -296,6 +321,75 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos-previos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requisitos Previos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guia-de-ejecucion-rapida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guía de Ejecución Rápida
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Guía de Ejecución Rápida">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opcion-1-ejecutar-desde-la-terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opción 1: Ejecutar desde la terminal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opcion-2-importar-las-funciones-en-un-script-propio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opción 2: Importar las funciones en un script propio
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -345,6 +439,66 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos-previos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requisitos Previos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guia-de-ejecucion-rapida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guía de Ejecución Rápida
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Guía de Ejecución Rápida">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opcion-1-ejecutar-desde-la-terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opción 1: Ejecutar desde la terminal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opcion-2-importar-las-funciones-en-un-script-propio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opción 2: Importar las funciones en un script propio
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -364,9 +518,29 @@
   
 
 
-  <h1>Tutoriales de Uso</h1>
+<h1 id="tutorial-de-uso">Tutorial de Uso</h1>
+<p>Este tutorial práctico le guiará en el proceso de utilización del script para aproximar la integral definida mediante el método numérico de cuadratura Gaussiana.</p>
+<h2 id="requisitos-previos">Requisitos Previos</h2>
+<p>Antes de ejecutar el script, asegúrese de tener instaladas las dependencias científicas requeridas en su entorno de Python:</p>
+<pre><code class="language-bash">pip install numpy scipy matplotlib
+</code></pre>
+<h2 id="guia-de-ejecucion-rapida">Guía de Ejecución Rápida</h2>
+<h3 id="opcion-1-ejecutar-desde-la-terminal">Opción 1: Ejecutar desde la terminal</h3>
+<p>Puede clonar el repositorio y correr de manera directa el script principal para observar las aproximaciones numéricas según el valor de N:</p>
+<pre><code class="language-bash">python cuadrature.py
+</code></pre>
+<h3 id="opcion-2-importar-las-funciones-en-un-script-propio">Opción 2: Importar las funciones en un script propio</h3>
+<p>Si desea utilizar la lógica de aproximación en otro bloque de código o en un cuaderno de Jupyter Notebook, puede importar el módulo de la siguiente manera:</p>
+<pre><code class="language-python">from cuadrature import resultado, escalado, pesos_puntos
 
+# Definir el grado de precisión deseado (N)
+puntos_evaluacion = 4
 
+# Calcular la aproximación de la integral
+mi_integral = resultado(puntos_evaluacion, escalado, pesos_puntos)
+
+print(f&quot;El resultado calculado para la aproximación es: {mi_integral}&quot;)
+</code></pre>
 
 
 
