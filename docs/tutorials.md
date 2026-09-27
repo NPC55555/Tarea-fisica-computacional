@@ -1,36 +1,24 @@
+# Tutorial de Uso y Resultados
 
-# Tutorial de Uso
+Este script se puede ejecutar de forma directa en la terminal de su computadora. Al correr el archivo, el programa evalúa automáticamente la integral definida utilizando diferentes niveles de precisión (\(N = 2\), \(N = 3\) y \(N = 4\)).
 
-Este tutorial práctico le guiará en el proceso de utilización del script para aproximar la integral definida mediante el método numérico de cuadratura Gaussiana.
+## Resultados Obtenidos en la Terminal
 
-## Requisitos Previos
+Al ejecutar el comando `python cuadrature.py`, se despliegan de inmediato los siguientes resultados en consola:
 
-Antes de ejecutar el script, asegúrese de tener instaladas las dependencias científicas requeridas en su entorno de Python:
+*   **Para N = 2:** `306.8199344959197`
+*   **Para N = 3:** `317.264151733829`
+*   **Para N = 4:** `317.3453903341579`
 
-```bash
-pip install numpy scipy matplotlib
-```
+### Análisis del Resultado Exacto
+El resultado obtenido con **\(N = 4\)** es el valor **exacto** de la integral de la tarea, a excepción de los pequeños errores de redondeo o precisión decimal propios de la computadora.
 
-## Guía de Ejecución Rápida
+---
 
-### Opción 1: Ejecutar desde la terminal
-Puede clonar el repositorio y correr de manera directa el script principal para observar las aproximaciones numéricas según el valor de N:
+## Flexibilidad y Modificación del Código
 
-```bash
-python cuadrature.py
-```
+El script está diseñado de manera modular, lo que significa que el usuario puede editarlo fácilmente en su editor de texto para adaptarlo a otros problemas matemáticos:
 
-### Opción 2: Importar las funciones en un script propio
-Si desea utilizar la lógica de aproximación en otro bloque de código o en un cuaderno de Jupyter Notebook, puede importar el módulo de la siguiente manera:
+*   **Cambiar el valor de N:** Puede modificar los argumentos de la función `resultado(N, ...)` en las líneas finales para probar cualquier otro número de puntos de colocación.
+*   **Cambiar la función:** Si edita el bloque interno de la función `integrando(varInd)`, puede cambiar la ecuación actual por cualquier otra función matemática o integrales con potencias diferentes para obtener sus resultados numéricos al instante.
 
-```python
-from cuadrature import resultado, escalado, pesos_puntos
-
-# Definir el grado de precisión deseado (N)
-puntos_evaluacion = 4
-
-# Calcular la aproximación de la integral
-mi_integral = resultado(puntos_evaluacion, escalado, pesos_puntos)
-
-print(f"El resultado calculado para la aproximación es: {mi_integral}")
-```
