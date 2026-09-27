@@ -1,12 +1,12 @@
 
 # Tarea 2: Cuadratura Gaussiana y Documentación
 
-Bienvenido a la documentación oficial del proyecto. El propósito de este trabajo es aplicar el concepto de cuadratura Gaussiana para la integración numérica utilizando los polinomios de Legendre.
+Se presenta la documentación de el codigo de cuadratura gaussiana para poder resolver integrales de forma numerica de la forma mas optima posible y determinar la cantidad de N nesesario para optener una solucion exacta a esepcion de los errores de de computador como el redondeo.
 
 ## Introducción al problema
 
 El objetivo principal es resolver numéricamente la siguiente integral definida en el intervalo de 1 a 3:
 
-$$ I = \int_{1}^{3} [x^6 - x^2 \sin(2x)] \, dx $$
+$ I = \int_{1}^{3} [x^6 - x^2 \sin(2x)] \, dx $
 
-En este sitio web encontrará la descripción detallada del método numérico utilizado, ejemplos prácticos de uso y la documentación técnica generada automáticamente a partir del código fuente en Python.
+En este sitio web se realisara una descripcion detallada del metodo numerico enpleado ademas de ejemplos practicos de su uso y la documentacion tecnica generada automaticamente a partir del codigo fuente en Python.
